@@ -2,10 +2,10 @@ const express = require('express');
 
 const createRouter = function (collection) {
   const router = express.Router();
-  console.log(",2222", router);
+  console.log("Making router", router);
 
-  router.get('/bb', (req, res) => {
-    console.log(",3333");
+  router.get('/', (req, res) => {
+    console.log("In router /");
     res.json({'message': 'Hello Steven'});
   });
   return router;
